@@ -7,10 +7,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const prisma = new PrismaClient();
-
 const JWT_SECRET = process.env.JSECRET_ACCESS_TOKEN!;
 const JWT_EXPIRATION = process.env.JSECRET_TIME_TO_EXPIRE!;
-
 
 interface CustomJwtPayload extends JwtPayload {
   id: number; 
