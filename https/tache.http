@@ -1,0 +1,35 @@
+
+POST http://localhost:3007/api/v1/taches
+Content-Type: application/json
+Accept: application/json
+
+{
+  "libelle": "tache2",
+  "statut": "incomplete",
+  "etat": true,
+  "userId": 1
+}
+
+###
+
+GET http://localhost:3007/api/v1/taches
+
+###
+
+POST http://localhost:3007/api/v1/taches/1
+
+###
+GET http://localhost:3007/api/v1/taches/1
+
+###
+GET http://localhost:3007/api/v1/taches/statut/incomplete
+
+###
+PUT http://localhost:3007/api/v1/taches/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "libelle": "tache"
+
+}
